@@ -2,5 +2,14 @@
     <div class="container mt-4">
         <h1>Welcome to Homeworks</h1>
         <a href="/users/<%= user._id %>/homeworks/new" class="btn btn-primary mb-3">Add New Homework</a>
-        
+        <div class="row">
+            <% homeworks.forEach(homework=> { %>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card homework-card">
+                        <img src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="card-img-top" alt="homework photo">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">
+                                <%= homework.courseCode %>
+                            </h5>
     <%- include('../partials/footer') %>
