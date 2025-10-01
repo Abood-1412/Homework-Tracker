@@ -23,3 +23,19 @@ const homeworkSchema = new mongoose.Schema({
         required: true,
     }
 }, { timestamps: true })
+
+const userSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: true,
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    homeworks: [homeworkSchema]
+}, { timestamps: true })
+
+const User = mongoose.model('User', userSchema)
+
+module.exports = User
