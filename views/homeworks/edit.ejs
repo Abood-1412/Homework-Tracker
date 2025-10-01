@@ -7,3 +7,21 @@
                 <label for="courseCode">Course Code:</label>
                 <input type="text" name="courseCode" class="form-control" required value="<%= homework.courseCode %>">
             </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" name="dueDate" class="form-control" required
+                    value="<%= homework.dueDate.toISOString().slice(0, 10) %>">
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <input type="text" name="notes" class="form-control" value="<%= homework.notes %>">
+            </div>
+            <div class="form-group">
+                <label for="completed">Completed:</label>
+                <input type="checkbox" name="completed" <% if (homework.completed) { %>checked<% } %> >
+            </div>
+            <button type="submit" class="btn btn-primary">Update Homework</button>
+        </form>
+    </div>
+    <%- include('../partials/footer') %>
