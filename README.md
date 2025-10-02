@@ -1,6 +1,6 @@
 # Homework Tracker
 
-assignments Tracker is a simple yet powerful tool that allows students to simply track their assignments.  It supports complete CRUD (Create, Read, Update, and Delete) capability and has a community site where users may view all contributed homework. Instructors and teachers can also share assignments with students without logging in.
+Homework Tracker is a simple yet powerful tool that allows students to simply track their assignments.  It supports complete CRUD (Create, Read, Update, and Delete) capability and has a community site where users may view all contributed homework. Instructors and teachers can also share assignments with students without logging in.
 
 ---
 
