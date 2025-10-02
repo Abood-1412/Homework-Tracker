@@ -4,3 +4,8 @@
         <h1 class="text-center mb-4">
             <%= user.username %>'s Homeworks
         </h1>
+
+
+         <ul class="list-group">
+            <% user.homeworks.forEach(homework=> { %>
+                <li class="list-group-item">
