@@ -1,6 +1,6 @@
 # Homework Tracker
 
-Homework Tracker is a simple yet powerful project designed to help students easily track their homework. It provides full CRUD (Create, Read, Update, Delete) functionality and includes a community page where users can view all submitted homework. Instructors and teachers can also share their assignments with students without needing to sign in.
+assignments Tracker is a simple yet powerful tool that allows students to simply track their assignments.  It supports complete CRUD (Create, Read, Update, and Delete) capability and has a community site where users may view all contributed homework. Instructors and teachers can also share assignments with students without logging in.
 
 ---
 
@@ -17,19 +17,23 @@ Homework Tracker is a simple yet powerful project designed to help students easi
 ## Screenshots
 
 ### Home Page
-![Home Page](https://github.com/user-attachments/assets/f7187134-6a68-458e-befd-b0f531ce8d10)
+![Home Page](./assests/Home-Page.png)
+
 
 ### Sign-Up Page
-![Sign Up Page](https://github.com/user-attachments/assets/a8082c69-b53b-4d67-ab01-af18ae721a19)
+![Sign Up Page](./assests/Sign-Up.png)
+
+### Sign-In Page
+![Sign In Page](./assests/Sign-In.png)
 
 ### All Homeworks Page
-![All Homeworks Page](https://github.com/user-attachments/assets/759f4ef1-9ff6-4d4b-a3ff-8fb23956d494)
+![All Homeworks Page](./assests/All-Homeworks.png)
 
 ### Show Page
-![Show Page](https://github.com/user-attachments/assets/6215cdcc-0a9a-401a-b59b-0b58133f7b9a)
+![Show Page](./assests/Show.png)
 
 ### Community Page
-![Community Page](https://github.com/user-attachments/assets/db060ed0-b2b1-4835-9bf6-bbd34cc58dcd)
+![Community Page](./assests/Community.png)
 
 ---
 
@@ -50,20 +54,41 @@ Homework Tracker is a simple yet powerful project designed to help students easi
 ---
 
 ## Project Planning
-Check out the user stories, tasks, and planning details on Trello:
-[Trello Board](https://trello.com/b/lnBDUkrS/project-2-planning-homeworkstracker)
+**User Stories:**
+- As a user, I want to see a welcome page.
+- As a user, I want to see a login nav button.
+- As a user, I want to see an add new homework button.
+- As a user, I want to easily add new homework.
+- As a user, I want to be redirected to all homeworks page.
+- As a user, I want to edit the homework easily.
+- As a user, I want to delete the homework if I want.
 
 ---
 
-## Try It Out
-You can test the deployed version of the Homework Tracker here:
-[Homework Tracker (Live Demo)](https://hw-tracker-df49ced2044f.herokuapp.com/)
+
+
+## User (user.js)
+
+| Field            | Type                | Description                       |
+|------------------|---------------------|-----------------------------------|
+| name             | String              | User's name                       |
+| password         | String              | User's password                   |
+| confirm password | String              | Confirmation of the password      |
+| homeworks        | [homeworksSchema]   | List of homeworks for the user    |
 
 ---
 
-## Author
-**Mohammed**
+## Homework (homeworks.js)
 
-Feel free to contribute by submitting issues or pull requests to improve the project!
+| Field            | Type     | Description                           |
+|------------------|----------|---------------------------------------|
+| subject          | String   | Subject of the homework                |
+| due date         | Date     | Deadline of the homework               |
+| additional notes | String   | Extra notes related to the homework    |
+| mark as done     | Boolean  | Indicates if the homework is finished  |
 
 ---
+
+## Relationship
+- **One-to-Many**: A **User** can have multiple **Homeworks**.  
+
